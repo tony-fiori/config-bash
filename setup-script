@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# emplacement des scripts
+DST="cp-script/"
+SRC="script/"
+
+# cree l'emplacement
+mkdir -p ~/"$DST"
+
+# suppprimer les scripts existants
+rm ~/"$DST"* 2>/dev/null
+
+# copie les script
+find ~/"$SRC" -type f -perm 744 -exec cp {} ~/"$DST" \;
+[[ $PATH == *"~/$DST"* ]] || PATH="~/$DST:$PATH"
