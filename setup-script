@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # emplacement des scripts
-DST="cp-script/"
-SRC="script/"
+DST="script/"
+SRC="config-bash/"
 
 # cree l'emplacement
 mkdir -p ~/"$DST"

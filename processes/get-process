@@ -1,0 +1,4 @@
+#!/bin/bash
+
+[[ $# -ne 1 ]] && echo "usage: $0 [process name]" && exit 1
+ps aux | grep -i #@
